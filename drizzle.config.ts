@@ -5,6 +5,7 @@ export default {
   schema: "./src/db/schema.ts",
   out: "./drizzle",
   driver: "mysql2",
+  strict: true,
   dbCredentials: {
     host: process.env.HOST!,
     database: process.env.NAME!,
